@@ -1,0 +1,218 @@
+/* Design */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  /* border:solid red; */
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+    color: #272727;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  /*NAV*/
+  nav{
+    background-color: #e1d8e977;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    /* box-shadow: 5px 0 10px rgba(0, 0, 0, 0); */
+
+
+    padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	/* background-color: #f4f4f4; */
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.nav-container{
+    width: 100vw;
+
+}
+.hamburguer-nav{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* Estilos para los enlaces */
+a {
+    color: rgb(41, 2, 49);           /* Establece el color del texto del enlace */
+    text-decoration: none;    /* Elimina la decoración de subrayado del enlace */
+    font-weight: bold;
+    font-size: 22px;
+  }
+  /* Estilos para el logo en la barra de navegación */
+.logo{
+    color:  rgb(41, 2, 49); 
+    text-decoration: none;    /* Elimina la decoración de subrayado del enlace */
+    font-weight: bold;
+    font-size: 28px;
+    /* margin-left: 30px; */
+    margin:0;
+}
+.main-nav{
+    display: none;
+    list-style: none;
+    margin-right: 30px;
+}
+.main-nav li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.main-nav li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+.main-nav li:hover, li:active{
+    background-color: rgb(194, 161, 201);
+}
+  /*SECTION BLOG*/
+  .main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+      font-size: 28px;
+      font-weight: 400;
+      text-align: left;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    border-radius: 6px;
+    font-weight: 400;
+    display: inline;
+    width: 35%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    justify-content: flex-end;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+    /* .header{
+        display: flex;
+        align-items: center;
+    } */
+	/* .main-nav{
+        display: flex;
+    } */
+    
+    /*
+    .main-nav-responsive-menu{
+        display: none;
+    } */
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+    /* .nav {
+		flex-direction: row;
+		justify-content: space-between;
+	} */
+  }
+
+  @media (min-width: 769px) {
+	.nav,
+	.main-nav {
+		display: flex;
+	}
+	.nav {
+		flex-direction: column;
+		align-items: center;
+    	/* .header {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	} */
+	}
+
+}
+
+  @media (min-width: 1025px) {
+	.nav {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #6d3163 40%, #d39eff 100%);
+  }
+  .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }   
+  
